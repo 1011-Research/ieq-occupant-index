@@ -1,64 +1,61 @@
-# IEQ Occupant Index
+# IEQ Occupant Index: software, design artifacts, and aggregated study data
 
-A reference prototype of a role-tiered post-occupancy feedback system that channels
-anonymous occupant comfort ratings into green building certification decisions under
-GRIHA (Green Rating for Integrated Habitat Assessment), India's national green
-building rating system.
+Supplementary materials for:
 
-This repository accompanies the research-through-design case study:
+> Abinaya J. and Suseelan A. "The Indoor Environmental Quality Occupant Index: A Role-Tiered Tool for Channeling Anonymous Occupant Feedback into Green Building Certification Decisions." Manuscript submitted to *Intelligent Buildings International*.
 
-> Abinaya J. and Suseelan A. "The Indoor Environmental Quality Occupant Index: A Role-Tiered Tool for
-> Channeling Anonymous Occupant Feedback into Green Building Certification Decisions."
-> Manuscript submitted to *Intelligent Buildings International*.
+This repository contains the reference implementation, the evaluated prototype build, design artifacts, and aggregated (counts-only) results of the usability study. It contains no participant quotations, session notes, or personal data. Sessions were not audio or video recorded.
 
-## What this is
+## Contents
 
-A single-page, dependency-free web application implementing the three role-tiered
-interfaces described in the paper (reviewers and assessors are assigned by the Council
-and work within the Council interface):
+### Software
 
-- **Occupant** — a five-domain, seven-point comfort survey (acoustic, spatial,
-  thermal, visual, indoor air quality), anonymous and pooled.
-- **Administrator** — a domain-by-domain dashboard combining pooled occupant
-  ratings with an illustrative weighted scoring schema, badge recognition, and a
-  "send to Council" action.
-- **GRIHA Council** — a portfolio queue of submissions with accept/return actions
-  and a drift-check view comparing the schema weighting against pooled evidence.
+| File | What it is | Supports |
+|---|---|---|
+| `index.html`, `app.js` | Static, dependency-free reference implementation of the three role-tiered interfaces: occupant, administrator, and GRIHA Council. Reviewers and assessors are assigned by the Council and work within its interface. | Prototype, Use Cases |
+| `IEQ_Occupant_Index_prototype.html` | Single-file build of the post-testing prototype with seeded demonstration data. Names and email addresses in the seeded team lists are placeholders. | Prototype, Discussion (Figures 7-9) |
+| `01_occupant_survey.png`, `02_admin_1_results.png` to `02_admin_6_reports.png`, `03_council_1_submissions.png` to `03_council_6_reviewers.png` | Full-page screenshots of every view of the prototype build: the occupant survey, six administrator tabs, and six Council tabs. | Prototype |
 
-## What this is not
+### Documents
 
-This is a **reference implementation for research transparency**, not the
-production system used in the paper's usability evaluation, and not connected to
-any real GRIHA database. All data shown (response counts, building and institution
-names, submission records) is illustrative demo data generated for this repository.
-State is held in memory only and resets on every page reload; there is no backend,
-no database, and no persistence.
+| File | What it is | Supports |
+|---|---|---|
+| `08_Study_Protocol.docx` | Study design, measures, severity scale, and role-specific task sets. | Evaluation Methods |
+| `09_Personas.docx` | Persona cards and four-role design requirements. | Methods, Table 1 |
+| `10_Information_Architecture.docx` | Information architecture, role-tiered screen flows, system architecture, and journey map. | System Design, Figures 1-2 |
 
-## Running it
+### Data
 
-No build step or dependencies are required.
+| File | What it is | Supports |
+|---|---|---|
+| `01_codebook.csv` | The codebook: 28 deductive codes in five thematic groups and 12 inductive codes confirmed in the manual coding pass (40 analytic codes), plus 4 outcome/valence codes, with definitions. | Evaluation Methods |
+| `02_code_frequency_by_role.csv` | Applications of each code by role. | Table 5 |
+| `03_code_group_by_role.csv` | Applications of each code group by role. | Figures 3 and 5 |
+| `04_code_cooccurrence_matrix.csv` | Code-by-code co-occurrence counts across coded segments; the diagonal holds each code's total applications. | Co-occurrence results, Figure 6 |
+| `05_coding_summary.csv` | Sessions, coded segments (143), and code applications (255) by role. | Results |
+| `06_heuristic_evaluation.csv` | Heuristic evaluation against Nielsen's ten heuristics. | Table 4 |
+| `07_findings_disposition_log.csv` | The 64 usability findings with severity, the session codes that raised each, and disposition (shipped, deferred, or out of scope). | Results, Process lens |
 
-```bash
-git clone <this-repo-url>
-cd ieq-occupant-index
-python3 -m http.server 8000
-# open http://localhost:8000 in a browser
-```
+### Figures
 
-Or simply open `index.html` directly in a browser (some browsers restrict local
-script loading from `file://` URLs; serving it locally as above avoids that).
+| File | What it is |
+|---|---|
+| `Figure1_System_architecture.png` | System architecture (manuscript Figure 1). |
+| `Figure3_Sankey_code_group_to_role.png` | Code group to role flow, generated from `03_code_group_by_role.csv` (manuscript Figure 3). |
+| `Figure5_Treemap_code_groups.png` | Code applications by code group, generated from `03_code_group_by_role.csv` (manuscript Figure 5). |
 
-## Files
+## Notes on the data
 
-- `index.html` — markup and styling
-- `app.js` — application logic and state (vanilla JavaScript, no framework)
-- `LICENSE` — MIT License
+- **Unit of count.** A coded segment is one coded quotation. A code application is one code attached to one segment; a segment can carry several codes.
+- **Co-occurrence.** Two codes co-occur when both are applied to the same segment.
+- **Participant identification.** Participants are identified only by session code (OCC, ADM, CNC, and REV, numbered 01 to 05). The participant key is not included.
+- **Simulated data.** All institution names, buildings, and submission figures shown in the software and prototype are simulated for design demonstration. They do not represent verified GRIHA submissions or endorsements by the named institutions.
+- **Restricted data.** The written session notes (transcripts) and the coded ATLAS.ti project are not shared publicly because they contain participant responses and participants did not consent to public data sharing.
 
-## Citation
+## Running the software
 
-If you use or reference this prototype, please cite the accompanying paper (full
-citation to be updated on publication).
+Open `index.html` (reference implementation) or `IEQ_Occupant_Index_prototype.html` (prototype build) directly in a browser. Neither needs a build step, a server, or an internet connection. The reference implementation holds state in memory only and resets on every page reload.
 
 ## License
 
-MIT License. See `LICENSE`.
+The software is released under the MIT License (see `LICENSE`). The documents and data are released under CC BY 4.0.
