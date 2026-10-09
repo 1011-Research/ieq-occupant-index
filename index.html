@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IEQ Occupant Index — Post-Occupancy Evaluation for GRIHA</title>
+<style>
+  :root {
+    --navy:#1f3864; --green:#2e5e3e; --maroon:#7a2530; --grey:#595959;
+    --light:#eef1f6; --bg:#f7f8fa; --border:#d7dbe2; --white:#fff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0; background: var(--bg); color: #1a1a1a;
+  }
+  header {
+    background: #0f2038; color: white; padding: 14px 24px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+  }
+  header .brand { font-weight: 700; font-size: 1.05rem; }
+  header .brand span { display:block; font-weight:400; font-size:.75rem; color:#b7c2d6; }
+  nav button {
+    background: transparent; border: 1px solid #3a4d6b; color: #cfd8e8;
+    padding: 8px 14px; border-radius: 20px; cursor: pointer; font-size: .85rem; margin-left: 6px;
+  }
+  nav button.active { background: white; color: #0f2038; font-weight: 600; border-color:white; }
+  main { max-width: 980px; margin: 0 auto; padding: 24px; }
+  .card {
+    background: var(--white); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px 20px; margin-bottom: 16px;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 6px; }
+  h2 { font-size: 1.1rem; margin: 0 0 4px; }
+  .muted { color: var(--grey); font-size: .88rem; }
+  .stat-row { display:flex; gap:12px; flex-wrap:wrap; margin: 14px 0; }
+  .stat { background: var(--light); border-radius: 8px; padding: 10px 16px; flex:1; min-width:120px; }
+  .stat b { display:block; font-size:1.3rem; }
+  .domain { border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 12px; }
+  .domain h3 { margin: 0 0 2px; font-size: 1rem; }
+  .scale { display:flex; gap:6px; margin: 10px 0 4px; flex-wrap: wrap; }
+  .scale button {
+    width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--border);
+    background: white; cursor: pointer; font-weight: 600;
+  }
+  .scale button.selected { background: var(--green); color: white; border-color: var(--green); }
+  .scale-labels { display:flex; justify-content:space-between; font-size:.75rem; color:var(--grey); }
+  textarea.comment {
+    width: 100%; margin-top: 8px; border: 1px solid var(--border); border-radius: 6px;
+    padding: 8px; font-family: inherit; font-size: .85rem; resize: vertical; min-height: 44px;
+  }
+  .btn {
+    background: var(--green); color: white; border: none; border-radius: 24px;
+    padding: 10px 22px; font-size: .95rem; font-weight: 600; cursor: pointer;
+  }
+  .btn:disabled { background: #a7b6ac; cursor: not-allowed; }
+  .btn.secondary { background: var(--navy); }
+  .btn.outline { background: transparent; color: var(--maroon); border: 1px solid var(--maroon); }
+  .badge-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+  .badge-chip {
+    border-radius: 20px; padding: 6px 14px; font-size: .8rem; font-weight:600;
+    border: 1px solid var(--border); background: var(--light);
+  }
+  .badge-chip.earned { background: #e6f2e9; border-color:#3a6b35; color:#2e5e3e; }
+  table { width:100%; border-collapse: collapse; font-size: .88rem; }
+  th, td { text-align:left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { background: var(--light); }
+  .tag { padding: 3px 10px; border-radius:12px; font-size:.75rem; font-weight:600; }
+  .tag.pending { background:#fdf1da; color:#8a6116; }
+  .tag.pooled { background:#e6f2e9; color:#2e5e3e; }
+  .tag.returned { background:#f7e9e9; color:#8c2f2f; }
+  .weight-bar-wrap { background: var(--light); border-radius: 6px; height: 10px; overflow:hidden; margin: 6px 0; }
+  .weight-bar { background: var(--navy); height: 100%; }
+  footer { text-align:center; color: var(--grey); font-size: .8rem; padding: 24px; }
+  .disclaimer {
+    background:#fdf6e3; border:1px solid #e6d9a8; border-radius:8px; padding:10px 14px;
+    font-size:.82rem; color:#6b5a1e; margin-bottom:16px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">IEQ Occupant Index <span>Post-occupancy evaluation prototype · GRIHA</span></div>
+  <nav>
+    <button data-role="occupant" class="active">I'm an occupant</button>
+    <button data-role="administrator">I'm an administrator</button>
+    <button data-role="council">GRIHA Council</button>
+  </nav>
+</header>
+
+<main>
+  <div class="disclaimer">
+    This is a reference implementation accompanying a research-through-design case study. Data shown
+    (response counts, building names, submission records) are illustrative demo data, not real GRIHA
+    submissions. All state resets on page reload.
+  </div>
+  <div id="app"></div>
+</main>
+
+<footer>IEQ Occupant Index — open-source reference prototype. See LICENSE for terms.</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

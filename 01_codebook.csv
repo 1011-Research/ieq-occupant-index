@@ -1,0 +1,45 @@
+code,code_group,code_type,definition,total_applications
+NAV-scan-difficulty,Navigation & Structure,Deductive,Participant has difficulty scanning or locating information on a long or dense screen.,4
+NAV-tab-use,Navigation & Structure,Deductive,"Participant uses, seeks, or comments on tabbed or sectioned sub-navigation.",4
+NAV-portfolio-nav,Navigation & Structure,Deductive,"Participant navigates, or tries to navigate, between buildings or entries in a portfolio-level view.",1
+NAV-lost,Navigation & Structure,Deductive,Participant loses their place or cannot tell where they are in the interface.,4
+INP-wants-context,Input & Reporting Depth,Deductive,"Participant wants to record or see the cause or context behind a rating, not only its numeric value.",11
+INP-comment-field-use,Input & Reporting Depth,Deductive,"Participant uses, or comments on the use of, a free-text comment or note field.",4
+INP-preview-check,Input & Reporting Depth,Deductive,"Participant checks, or asks to check, a preview or summary before committing an action.",0
+INP-report-download,Input & Reporting Depth,Deductive,"Participant generates, downloads, or comments on an exported report or file.",5
+INP-evidence-clarity,Input & Reporting Depth,Deductive,"Participant judges whether evidence, a score, or supporting information is clear or sufficient.",19
+MULTI-compare-request,Multi-Building & Multi-User,Deductive,"Participant requests comparison across buildings, the reporting pool, or a portfolio.",7
+MULTI-leaderboard-use,Multi-Building & Multi-User,Deductive,Participant uses or comments on a ranked or leaderboard-style comparison.,0
+MULTI-role-mgmt,Multi-Building & Multi-User,Deductive,"Participant raises the need to assign, limit, or manage permissions for different users or roles.",5
+MULTI-period-filter,Multi-Building & Multi-User,Deductive,Participant needs to set or change the survey or reporting period.,2
+EVI-doc-vs-operation,Evidence Verification (Reviewer/Assessor),Deductive,Reviewer distinguishes documentary evidence (a written protocol) from evidence that the building actually operates as documented.,9
+EVI-ownership,Evidence Verification (Reviewer/Assessor),Deductive,Participant asks who owns or is responsible for a piece of evidence or protocol.,2
+EVI-staleness,Evidence Verification (Reviewer/Assessor),Deductive,Participant raises the risk that evidence or a confirmation is out of date or no longer valid.,2
+EVI-count-integrity,Evidence Verification (Reviewer/Assessor),Deductive,Participant notices a mismatch between a stated count or badge-criterion total and the listed items or data.,7
+EVI-standalone-criterion,Evidence Verification (Reviewer/Assessor),Deductive,Participant needs a criterion to be assessed separately rather than bundled with others.,5
+H-visibility,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: visibility of system status.,6
+H-match-world,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: match between system and the real world.,5
+H-control-freedom,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: user control and freedom.,2
+H-consistency,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: consistency and standards.,4
+H-error-prevention,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: error prevention.,3
+H-recognition,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: recognition rather than recall.,0
+H-flexibility,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: flexibility and efficiency of use.,1
+H-aesthetic,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: aesthetic and minimalist design.,3
+H-error-recovery,Heuristic Cross-Reference,Deductive,"Cross-reference to Nielsen heuristic: help users recognize, diagnose, and recover from errors.",2
+H-help-docs,Heuristic Cross-Reference,Deductive,Cross-reference to Nielsen heuristic: help and documentation.,0
+OUT-friction,Outcome/Valence,Valence,"Valence: the segment expresses friction, confusion, or a negative experience.",60
+OUT-ease,Outcome/Valence,Valence,Valence: the segment expresses ease or a positive experience.,3
+OUT-suggestion,Outcome/Valence,Valence,Valence: the participant proposes a change or new feature.,41
+OUT-workaround,Outcome/Valence,Valence,Valence: the participant describes or performs a workaround.,5
+NEW-not-applicable,Inductive,Inductive,Inductive: the domain does not apply to the participant's space.,3
+NEW-mobile-input,Inductive,Inductive,Inductive: typing versus tap-to-select; mobile-specific input.,3
+NEW-copy-defect,Inductive,Inductive,"Inductive: pluralization, overflow, or inconsistent stated duration in interface copy.",2
+NEW-space-scoping,Inductive,Inductive,Inductive: the response should tie to one named space rather than be averaged.,1
+NEW-project-context,Inductive,Inductive,"Inductive: persistent context, switcher, or creation path for projects.",5
+NEW-response-rate-denom,Inductive,Inductive,Inductive: a raw count lacks credibility without a denominator.,2
+NEW-actionability,Inductive,Inductive,"Inductive: a score needs to translate into a ranked, actionable list.",3
+NEW-scope-pushback,Inductive,Inductive,"Inductive: the participant argues against adding scope, even their own idea.",4
+NEW-onboarding-gap,Inductive,Inductive,Inductive: a low-familiarity user lacks tacit knowledge that experienced users have.,2
+NEW-visual-credibility,Inductive,Inductive,Inductive: one poor visual element damages trust in the whole interface.,1
+NEW-badge-naming,Inductive,Inductive,Inductive: a badge name misleads about its actual criteria.,2
+NEW-anonymity-trust,Inductive,Inductive,Inductive: fear that individual input could be traced back or scored against the participant.,1

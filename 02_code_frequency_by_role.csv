@@ -1,0 +1,46 @@
+code,code_group,Occupant,Administrator,GRIHA Council,Reviewer/Assessor,total
+NAV-scan-difficulty,Navigation & Structure,1,0,2,1,4
+NAV-tab-use,Navigation & Structure,0,2,2,0,4
+NAV-portfolio-nav,Navigation & Structure,0,0,1,0,1
+NAV-lost,Navigation & Structure,3,1,0,0,4
+INP-wants-context,Input & Reporting Depth,11,0,0,0,11
+INP-comment-field-use,Input & Reporting Depth,4,0,0,0,4
+INP-preview-check,Input & Reporting Depth,0,0,0,0,0
+INP-report-download,Input & Reporting Depth,0,4,1,0,5
+INP-evidence-clarity,Input & Reporting Depth,4,2,3,10,19
+MULTI-compare-request,Multi-Building & Multi-User,0,0,7,0,7
+MULTI-leaderboard-use,Multi-Building & Multi-User,0,0,0,0,0
+MULTI-role-mgmt,Multi-Building & Multi-User,0,3,2,0,5
+MULTI-period-filter,Multi-Building & Multi-User,0,2,0,0,2
+EVI-doc-vs-operation,Evidence Verification (Reviewer/Assessor),0,0,0,9,9
+EVI-ownership,Evidence Verification (Reviewer/Assessor),0,0,0,2,2
+EVI-staleness,Evidence Verification (Reviewer/Assessor),0,1,0,1,2
+EVI-count-integrity,Evidence Verification (Reviewer/Assessor),0,0,3,4,7
+EVI-standalone-criterion,Evidence Verification (Reviewer/Assessor),0,0,0,5,5
+H-visibility,Heuristic Cross-Reference,3,1,2,0,6
+H-match-world,Heuristic Cross-Reference,1,1,1,2,5
+H-control-freedom,Heuristic Cross-Reference,1,1,0,0,2
+H-consistency,Heuristic Cross-Reference,1,0,0,3,4
+H-error-prevention,Heuristic Cross-Reference,0,3,0,0,3
+H-recognition,Heuristic Cross-Reference,0,0,0,0,0
+H-flexibility,Heuristic Cross-Reference,1,0,0,0,1
+H-aesthetic,Heuristic Cross-Reference,0,1,2,0,3
+H-error-recovery,Heuristic Cross-Reference,0,2,0,0,2
+H-help-docs,Heuristic Cross-Reference,0,0,0,0,0
+OUT-friction,Outcome/Valence,16,17,11,16,60
+OUT-ease,Outcome/Valence,2,0,1,0,3
+OUT-suggestion,Outcome/Valence,9,12,14,6,41
+OUT-workaround,Outcome/Valence,0,3,2,0,5
+NEW-not-applicable,Inductive,3,0,0,0,3
+NEW-mobile-input,Inductive,3,0,0,0,3
+NEW-copy-defect,Inductive,2,0,0,0,2
+NEW-space-scoping,Inductive,1,0,0,0,1
+NEW-project-context,Inductive,0,5,0,0,5
+NEW-response-rate-denom,Inductive,0,2,0,0,2
+NEW-actionability,Inductive,0,3,0,0,3
+NEW-scope-pushback,Inductive,0,2,2,0,4
+NEW-onboarding-gap,Inductive,0,1,0,1,2
+NEW-visual-credibility,Inductive,0,0,1,0,1
+NEW-badge-naming,Inductive,0,0,0,2,2
+NEW-anonymity-trust,Inductive,1,0,0,0,1
+TOTAL,,67,69,57,62,255

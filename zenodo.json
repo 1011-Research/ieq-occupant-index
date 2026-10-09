@@ -1,0 +1,11 @@
+{
+  "title": "IEQ Occupant Index: software, design artifacts, and aggregated usability study data",
+  "upload_type": "software",
+  "description": "Reference implementation, prototype build, design artifacts (personas, information architecture, study protocol), and aggregated counts-only usability study data (codebook, code frequencies, co-occurrence, heuristic evaluation, findings log) supporting the manuscript 'The Indoor Environmental Quality Occupant Index: A Role-Tiered Tool for Channeling Anonymous Occupant Feedback into Green Building Certification Decisions', submitted to Intelligent Buildings International. Contains no participant quotations, session notes, or personal data.",
+  "creators": [
+    {"name": "J, Abinaya", "affiliation": "CHRIST (Deemed to be University), Bengaluru", "orcid": "0000-0001-8298-7846"},
+    {"name": "Suseelan, Anitha", "affiliation": "CHRIST (Deemed to be University), Bengaluru"}
+  ],
+  "license": "MIT",
+  "keywords": ["indoor environmental quality", "post-occupancy evaluation", "GRIHA", "green building certification", "research through design", "usability testing"]
+}

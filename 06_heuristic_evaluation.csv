@@ -1,0 +1,11 @@
+nielsen_heuristic,finding,rating
+Visibility of system status,Occupant interface shows a live response counter; Council interface labels each submission's status and attempt number,Compliant
+Match between system and the real world,Occupant-facing domains use everyday language; administrator and Council interfaces use certification terminology appropriate to that audience,Compliant
+User control and freedom,"Completion and confirmation gates prevent accidental submission, but no interface offers a way to withdraw or revise an attempt once sent",Partial
+Consistency and standards,"Shared card layout, color coding, and iconography recur across all three interfaces and across domains within an interface",Compliant
+Error prevention,Dual-gate logic prevents an attempt from being sent until all occupant domains are rated and the administrator has confirmed a pre-submission preview,Compliant
+Recognition rather than recall,Domain cards pair an icon with a label and description; badge criteria list explicit pass/fail checkmarks rather than requiring recall of a threshold,Compliant
+Flexibility and efficiency of use,"Climate-zone leaderboard, survey-period filter, and team role management were added directly in response to a usability-testing finding",Compliant
+Aesthetic and minimalist design,"The administrator's domain-detail view remains dense after the expandable-tabs revision reduced, but did not eliminate, information density",Partial
+"Help users recognize, diagnose, and recover from errors","The remediation list states the failed measurement, the standard it was measured against, typical effort, and credit at stake for each under-credited domain",Compliant
+Help and documentation,"No interface provides in-context help, such as a glossary of domain terms or an explanation of the weighting schema",Gap

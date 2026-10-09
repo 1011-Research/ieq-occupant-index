@@ -1,0 +1,65 @@
+finding_id,severity,finding,raised_by_session_codes,disposition
+F-01,Critical,The 7-point scale captures severity but not cause. Every occupant in the round volunteered a cause the instrument could not record; administrators then cannot act and assessors cannot verify.,"OCC-01, OCC-02, OCC-03, OCC-04",Shipped - descriptor chips added to the occupant view.
+F-02,Major,A single global comment box arrives too late; participants want to annotate at the moment of rating.,"OCC-01, OCC-03","Shipped - optional free-text note per domain, collapsed by default."
+F-03,Minor,Stated duration differs between the hero banner and the stat card.,"OCC-01, OCC-05","Shipped - duration reconciled to “under five minutes” across hero, stat and chip."
+F-04,Major,"Tags must be optional and counted separately from the rating scales, otherwise participants either force-choose or self-censor.",OCC-02,Shipped - chips are optional and counted independently of ratings.
+F-05,Major,No “not applicable” path for a domain the space physically cannot deliver.,OCC-02,Deferred to next round - needs a schema decision on how N/A affects the domain mean.
+F-06,Minor,Pluralisation defect: “1 domains”.,"OCC-02, OCC-05",Shipped - pluralisation pass.
+F-07,Major,"Chip vocabulary must use occupants' own words and cover the “no alternative space” case, not only intensity.",OCC-03,"Shipped - eight chips: glare, stuffy, echo, too warm, corridor noise, too dim, nowhere quiet, draughty."
+F-08,Minor,Domain labels use assessment vocabulary rather than occupant vocabulary; “thermal comfort” queried by two of five occupants.,OCC-04,Shipped - plain-language helper text under each domain label.
+F-09,Major,Global comment box below the fold was not discovered at all by 1 of 5 occupants.,OCC-04,"Shipped - replaced by per-domain notes, collapsed by default (collapsed default explicitly validated by this participant)."
+F-10,Major,Free-text is effectively unavailable on mobile; tap-to-answer is the only realistic mobile input.,OCC-05,Shipped - chips carry the mobile case; note stays optional.
+F-11,Enhancement,Hot-deskers need the response scoped to a named space.,OCC-05,"Deferred - space-level scoping is a schema change, logged for the next round."
+F-12,Critical,No project context or switcher; participant resorted to multiple tabs and reported real-world mis-entry risk.,ADM-01,Shipped - pinned toolbar with project dropdown and Add/Edit project.
+F-13,Critical,Raw response count without an enrolled-occupant denominator is the single biggest credibility gap; named by 4 of 5 administrators and 3 of 5 reviewers.,"ADM-01, ADM-02, ADM-03, ADM-05",Shipped - response rate against enrolled occupants.
+F-14,Major,Fixed period presets cannot express a rolling GRIHA window.,"ADM-01, ADM-03","Shipped - survey-period dropdown plus custom range with real From/To pickers; all metrics, curve and captions recompute."
+F-15,Major,No accrual view of responses over time.,ADM-01,Shipped - cumulative accrual curve.
+F-16,Minor,Project identity carries no descriptive context.,"ADM-01, ADM-03","Shipped - caption line with type, area, occupancy and climate zone."
+F-17,Major,No indication of how far the project is from the next credit point.,"ADM-01, ADM-02",Shipped - distance-to-next-credit-point bar.
+F-18,Critical,Domain scores are not actionable; administrators need ranked complaint descriptors to raise work orders against.,ADM-02,Shipped - complaint-descriptor bars in the administrator view.
+F-19,Critical,"Logging a remediation produced no visible change, breaking the feedback loop and discouraging future logging.",ADM-02,Shipped - complaint descriptors fall when a remediation is logged.
+F-20,Major,Long single-scroll page causes repeated loss of place.,ADM-02,"Shipped - six-tab sticky sub-nav: Results, Responses, Badges, Improve, Submit, Reports & team."
+F-21,Minor,Exported file name carries no date.,ADM-02,Shipped - dated report file.
+F-22,Critical,Submission could be sent with no review step; one participant sent unintentionally during the session.,ADM-03,"Shipped - review-before-sending summary built on the five-domain ring, with a confirm gate: Send stays locked until confirmed."
+F-23,Critical,A confirmation can go stale if evidence or remediations change after it is given.,"ADM-03, REV-05",Shipped - any later remediation or evidence toggle re-locks the send.
+F-24,Enhancement,The five-domain ring is the strongest single visual for panel presentation.,ADM-03,Shipped - ring used as the hero of the review screen.
+F-25,Major,No in-app path to create or edit a project.,ADM-04,Shipped - Add/Edit project in the pinned toolbar.
+F-26,Major,"Report generation lacks type, period, cover selection and preview.",ADM-04,"Shipped - report generator with type, period, cover picker, live preview and dated file."
+F-27,Major,"No role separation between viewing, adding data and submitting.",ADM-04,Shipped - team roles with invite.
+F-28,Minor,Bulk add/remove across projects not supported.,ADM-04,Deferred - single-project management ships now; bulk operations logged.
+F-29,-,Portfolio floor-area/emissions statistics and LEED-style tiers explicitly argued against by the participant who initially requested them.,ADM-04,Out of scope - confirmed excluded.
+F-30,Critical,An invalid custom range renders an unexplained blank page; participant's first instinct was to abandon the task.,ADM-05,Shipped - invalid range shows an explicit empty state.
+F-31,Major,Caption text failed contrast at small sizes.,ADM-05,Shipped - contrast pass to ≈4.7:1 across captions and secondary text.
+F-32,Major,Sub-nav labels alone are not discriminable to a low-familiarity user.,ADM-05,"Shipped - sub-nav gains icons, hover states, an active pill in #0e1c14, and sticks below the header."
+F-33,Major,No discoverable invite-by-email path.,ADM-05,Shipped - team roles with invite by email.
+F-34,Major,Flat stat row reads as decoration; no visual hierarchy and no units.,CNC-01,Shipped - stat carousel (09 / 08 / 18 / 4.1k) with the leading card enlarged and prev/next stepping; units labelled.
+F-35,Critical,"No pooled, domain-level view across reporting buildings.","CNC-01, CNC-02",Shipped - pool domain rings.
+F-36,Critical,No this-building-versus-pool comparison.,CNC-01,Shipped - benchmark with pool average markers.
+F-37,Major,Credit mix across submissions not visible.,"CNC-01, CNC-03",Shipped - credit-mix donut.
+F-38,Major,No reviewer/assessor permission separation.,"CNC-01, CNC-05",Shipped - reviewer roles with add-by-email.
+F-39,Critical,The Council's primary decision - whether to recalibrate - is unsupported; no strategy adoption data exists.,CNC-02,"Shipped - strategy adoption leaderboard, ranked, flagging anything under 35% as a guidance issue."
+F-40,Major,No place to stage candidate strategies by climate zone.,CNC-02,"Shipped - climate-zone pipeline below the leaderboard, staged and tagged by domain."
+F-41,Minor,"Navigation labels should name the decision, not the data.",CNC-02,"Shipped - six-tab sub-nav: Submissions, Pool analysis, Strategies, Geography, Schema decision, Reviewers."
+F-42,Critical,Benchmark bars carry no reference point; the comparison the view exists for cannot be made.,CNC-03,Shipped - pool average markers on the benchmark.
+F-43,Minor,Small-pool means need their n shown alongside.,CNC-03,Shipped - pool count shown with the benchmark.
+F-44,Enhancement,CSV export of underlying figures requested for ad-hoc cuts.,CNC-03,Deferred - explicitly non-blocking per participant.
+F-45,Minor,"Carousel must allow direct selection, not forced stepping.",CNC-03,Shipped - prev/next plus direct card selection.
+F-46,Critical,Schematic map is geographically wrong and undermines trust in the whole view; zone-based task could not be completed.,CNC-04,"Shipped - real India map built on Natural Earth geometry, authored as a separate file and embedded in the Council view."
+F-47,Major,Buildings must be identifiable from the map itself.,CNC-04,Shipped - hover a dot for the building.
+F-48,Major,Zone-level comparison is the regional decision unit.,CNC-04,Shipped - dots coloured by climate zone; mean credit per zone.
+F-49,Major,Single long Council page conflates six distinct decision contexts.,CNC-05,"Shipped - six-tab sub-nav: Submissions, Pool analysis, Strategies, Geography, Schema decision, Reviewers."
+F-50,Major,Navigation must remain visible during screen-shared review calls.,CNC-05,"Shipped - sub-nav sticky below the header, with hover states and an active pill in #0e1c14."
+F-51,-,LEED-tier equivalence and financial modelling actively argued against.,CNC-05,Out of scope - confirmed excluded.
+F-52,Critical,"The seasonal protocol criterion states no content requirements, so submissions arrive incomplete and cost weeks in correspondence.","REV-01, REV-02",Shipped - required protocol contents enumerated: seasonal setpoints; fan-first sequencing; the mixed-mode changeover rule to mechanical cooling; night purge and damper schedules; blind and lighting rules.
+F-53,Major,Criterion bundled under a shared toggle; cannot be assessed or evidenced independently.,"REV-01, REV-04",Shipped - seasonal protocol given its own File-evidence toggle.
+F-54,Major,Badge criterion counts were hardcoded and disagreed with the listed items.,"REV-01, REV-03, REV-05",Shipped - criterion counts computed from the list.
+F-55,Minor,“Energy Champion” badge name does not describe its criteria in an IEQ index.,"REV-01, REV-04",Shipped - renamed Microclimate Champion with five criteria.
+F-56,Critical,No requirement for operational logs; the criterion could be satisfied by a document alone.,REV-02,"Shipped - two seasons of logs required (BMS trend data or facilities log), covering the hot-dry pre-monsoon and the humid monsoon period for this climate."
+F-57,Critical,"A single season, or an undifferentiated year, does not evidence that the protocol was followed.",REV-02,Shipped - two named seasons specified rather than a rolling year.
+F-58,Critical,No owner recorded against the protocol.,"REV-02, REV-03",Shipped - responsible facilities role captured (see REV-03).
+F-59,Major,Health Leadership badge under-specified; CO₂ threshold must be preserved.,REV-03,"Shipped - Health Leadership expanded to six criteria, CO₂ under 800 ppm retained."
+F-60,Major,Glare-free zones mis-grouped.,REV-03,Shipped - Digital Adaptation expanded to six criteria including glare-free zones.
+F-61,Major,"Criteria give no statement of what sufficient evidence looks like, pushing cost onto supervision.",REV-04,Shipped - required contents listed on the criterion.
+F-62,Minor,Long criterion text overflows its container at 1366×768.,REV-04,Shipped - overflow fixes.
+F-63,Critical,Two seasons of logs can be satisfied with identical schedules; the criterion's actual intent - demonstrated seasonal difference - was unverifiable.,REV-05,Shipped - evidence of seasonal change required: the same spaces must be shown running differently in each season.
+F-64,Major,The administrator's review summary and the reviewer's view must be the same artefact.,REV-05,Shipped - review-before-sending summary built on the same five-domain ring.
